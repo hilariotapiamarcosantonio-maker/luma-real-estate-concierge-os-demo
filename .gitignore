@@ -1,0 +1,78 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+Thumbs.db
+*.pem
+
+# debug & logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+pnpm-debug.log*
+
+# env files (NUNCA subir al repo)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# media & recordings (prevent heavy files)
+*.mp4
+*.mov
+*.webm
+screenshots/
+recordings/
+
+# data exports (prevent leaks)
+*.csv
+*.xlsx
+*.xls
+*.vcf
+*.sql
+*.sqlite
+*.db
+backups/
+exports/
+logs/
+
+# credenciales y secretos (NUNCA subir)
+credentials/
+service-account*.json
+*secret*
+*private-key*
+*token*.json
+data_real/
+clientes/
+contactos/
+prospectos/
+dumps/

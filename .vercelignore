@@ -1,0 +1,47 @@
+# Vercel ignore — Demo Oficial Aurora Concierge Inmobiliario
+
+# Datos sensibles (NUNCA desplegar)
+.env
+.env.*
+*.env.local
+credentials/
+service-account*.json
+*secret*
+*private-key*
+*token*.json
+data_real/
+clientes/
+contactos/
+prospectos/
+backups/
+dumps/
+exports/
+
+# Archivos de datos reales
+*.csv
+*.xlsx
+*.xls
+*.vcf
+*.sql
+*.sqlite
+*.db
+
+# Dependencias locales
+node_modules/
+
+# Archivos de desarrollo
+*.log
+.DS_Store
+Thumbs.db
+
+# Archivos de scripts internos
+AGENTS.md
+CLAUDE.md
+docs/
+
+# Media pesada
+*.mp4
+*.mov
+*.webm
+screenshots/
+recordings/

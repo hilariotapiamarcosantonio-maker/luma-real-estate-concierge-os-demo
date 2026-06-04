@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #c5a880;
+  --color-gold-hover: #b3946c;
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), "Courier New", monospace;
+}
+
+:root {
+  --background: #09090b;
+  --foreground: #f4f4f5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Scrollbars premium sutiles */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 168, 128, 0.3);
+}
+
+/* Clases de utilidad para glassmorphism */
+.glass-panel {
+  background: rgba(15, 15, 20, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f3e7da 0%, #c5a880 50%, #9e7f59 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(197, 168, 128, 0.15);
+  border-color: rgba(197, 168, 128, 0.3);
+}
+
+/* Utilidades de texto gold */
+.text-gold {
+  color: #c5a880;
+}
+
+/* Animaciones */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out forwards;
+}
+
+/* Responsive: asegurar scroll en dashboard */
+@media (max-width: 1024px) {
+  .dashboard-scroll {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
